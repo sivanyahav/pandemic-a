@@ -8,8 +8,8 @@ int& Board:: operator[](City c){
 }
 
 bool Board::is_clean() {
-    for(auto& pair: diseasCubes) {
-        if(pair.second > 0) {
+    for(auto& city: diseasCubes) {
+        if(city.second > 0) {
             return false;
         }
     }
